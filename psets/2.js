@@ -12,3 +12,12 @@ Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no mo
 */
 
 // write your solution here...
+
+var age = 27;
+var max_age = 107;
+var daily_snack = 2;
+var years_left = 107 - 27;
+var yearly_snacks = 2 * 365;
+var total_snacks = yearly_snacks * years_left;
+
+console.log("You will need " + total_snacks + " to last you until the ripe old age of " + max_age + " ")
