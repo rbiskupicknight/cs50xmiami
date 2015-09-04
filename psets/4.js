@@ -11,3 +11,11 @@ http://www.mathsisfun.com/temperature-conversion.html
 */
 
 // write your solution here...
+
+var celcius_input = 7;
+var fahrenheit_output = ((celcius_input * 9) / 5) + 32;
+var fahrenheit_input = 84;
+var celcius_output = ((fahrenheit_input - 32) * 5) / 9;
+
+console.log("" + celcius_input + "°C is " + fahrenheit_output + "°F")
+console.log("" + fahrenheit_input + "°F is " + celcius_output + "°C")
