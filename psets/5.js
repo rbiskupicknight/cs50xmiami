@@ -10,6 +10,15 @@ For example:
   DrEvil(1000000): 1000000 dollars (pinky)
 */
 
+var amount = process.argv[2];
+var message = drEvil(amount);
+console.log(message);
+
 function drEvil(amount) {
-  // write your solution here...
+  if (amount >= 1000000){
+    return("" + amount + " dollars (pinky)");
+  }
+  else {
+    return("" + amount + " dollars");
+  }
 }
