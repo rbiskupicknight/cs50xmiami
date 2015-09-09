@@ -15,7 +15,21 @@ For example:
   verbing('go'): 'go'
 
 */
-
+var word = process.argv[2];
+if (word.length < 3){
+  console.log(word)
+}
+else {
+  var message = verbing(word)
+  console.log(message)
+}
 function verbing(word) {
-  // write your solution here...
+  var ending = word.substr(-3, 3);
+  if (ending == "ing")
+  {
+    return(word + "ly")
+  }
+  else{
+  return(word + "ing")
+}
 }
