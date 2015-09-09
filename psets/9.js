@@ -14,7 +14,24 @@ For example:
   notBad('This dinner is bad!'): 'This dinner is bad!'
 
 */
+var word = process.argv[2];
+var message = notBad(word);
+console.log(message);
 
 function notBad(sentence) {
-  // write your solution here...
+  var not = sentence.search("not");
+  var bad = sentence.search("bad");
+  if (not === -1){
+    return sentence;
+  }
+  else if (bad === -1){
+    return sentence;
+  }
+  else if (not > bad){
+    return sentence;
+  }
+  else {
+    var beginning = word.slice(0,not);
+    return (beginning + "good!")
+  }
 }
